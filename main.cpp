@@ -14,7 +14,7 @@ class Matrix {
         void input_matrix();
         void write_matrix();
         void make_row_product();
-        void write_products();
+        void write_products_list();
         void average_product_value();
         void selection_sort(int row);
 };
@@ -64,7 +64,7 @@ void Matrix::make_row_product() {
     }
 }
 
-void Matrix::write_products() {
+void Matrix::write_products_list() {
     cout << "\nProducts list:" << endl;
 
     for (i = 0;i < N - 1;i++) {
@@ -102,7 +102,7 @@ int main() {
 
     M.write_matrix();
     M.make_row_product();
-    M.write_products();
+    M.write_products_list();
     M.average_product_value();
 
     return 0;
