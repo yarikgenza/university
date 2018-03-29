@@ -3,12 +3,11 @@ import java.util.List;
 
 public class Root {
     public static void main(String [] argv) {
-        Crocodile aligator = new Crocodile("Co-co", "1.5m", 50);
-        Crocodile notAligator = new Crocodile("H-x", "2m", 60);
+
+        Aligator aligator = new Aligator("Co-co", "1.5m", 50, 20, "dark");
 
         List crocodiles = new ArrayList();
         crocodiles.add(aligator);
-        crocodiles.add(notAligator);
 
         String headers = aligator.getHeaders();
 

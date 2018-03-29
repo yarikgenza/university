@@ -1,43 +1,16 @@
-public class Crocodile {
-    String name;
-    String size;
-    int weight;
+public class Crocodile extends Reptile {
+    private String skinTone;
 
-    Crocodile(String name, String size, int weight) {
-        this.name = name;
-        this.size = size;
-        this.weight = weight;
-    }
+    public Crocodile(String name, String size, int weight, String skinTone) {
+        super(name, size, weight);
+        this.skinTone = skinTone;
+    };
 
     public String getHeaders() {
-        return "name,size,weight";
+        return super.getHeaders() + ',' + "skinTone";
     }
 
     public String toCSV() {
-        return this.name + "," + this.size + "," + this.weight;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public int getWeight() {
-        return weight;
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
+        return super.toCSV() + ',' + this.skinTone;
     }
 }
