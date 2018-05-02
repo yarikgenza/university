@@ -9,7 +9,4 @@ public class Main {
         processor.showResult(processedString);
     }
 
-    public String simpleMethod(String passedStr) {
-        return passedStr;
-    }
 }

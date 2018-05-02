@@ -1,9 +1,13 @@
 package ua.lviv.iot;
 
-import junit.framework.TestCase;
 
-public class StringProcessorTest extends TestCase {
+import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
+public class StringProcessorTest {
+
+    @Test
     public void testProcessText() {
         String testString = "Hi people! Iam Yarik Genza." +
                 "JavaScript - what is that?" +
@@ -15,6 +19,7 @@ public class StringProcessorTest extends TestCase {
         assertEquals(expectedString, targetString);
     }
 
+    @Test
     public void testShowResult() {
         String expected = "Result: \npassedText";
         String dataString = "passedText";
